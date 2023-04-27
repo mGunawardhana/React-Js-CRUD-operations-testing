@@ -8,8 +8,9 @@ const EmpCreate = () => {
   const [phone, phoneChange] = useState("");
   const [active, activeChange] = useState(true);
 
-  const handleSubmit = () => { 
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(id, name, email, phone, active);
   };
 
   return (
@@ -17,7 +18,7 @@ const EmpCreate = () => {
       <div className="row">
         <div className="offset-lg-3 col-lg-6">
           <form className="container" onSubmit={handleSubmit}>
-            <div className="card" style={{ "text-align": "left" }}>
+            <div className="card" style={{ textAlign: "left" }}>
               <div className="card-title">
                 <h2>Employee Create</h2>
               </div>
