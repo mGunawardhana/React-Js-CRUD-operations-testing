@@ -5,11 +5,11 @@ const EmpListing = () => {
     const [empData, empDataChange] = useState(null);
     const navigate = useNavigate();
     const LoadDetail = (id) => {
-
+        navigate('/employee/detail/'+id);
     }
 
     const LoadEdit = (id) => {
-
+        navigate('/employee/edit/'+id);
     }
 
     const RemoveFunction = (id) => {
