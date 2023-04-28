@@ -11,6 +11,27 @@
       "name": "sas",
       "email": "sas@gmail.com",
       "phone": "071-9034572"
+    },
+    {
+      "name": "chathu",
+      "email": "chathu@gmail.com",
+      "phone": "091-2232123",
+      "active": true,
+      "id": 3
+    },
+    {
+      "name": "savindya",
+      "email": "savindya@gmail.com",
+      "phone": "071-0232312",
+      "active": true,
+      "id": 4
+    },
+    {
+      "name": "Robert",
+      "email": "robert@gmail.com",
+      "phone": "071-9072263",
+      "active": true,
+      "id": 5
     }
   ]
 }
