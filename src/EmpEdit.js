@@ -11,8 +11,11 @@ const EmpEdit = () => {
                 return res.json();
             })
             .then((res) => {
-                // alert(resp.getMessage())
-                // empdatachange(res);
+                idChange(res.id);
+                nameChange(res.name);
+                emailChange(res.email);
+                phoneChange(res.phone);
+                activeChange(res.active )
             })
             .catch((error) => {
                 alert(error.getMessage());
@@ -34,8 +37,8 @@ const EmpEdit = () => {
         const empData
             = {name, email, phone, active};
 
-        fetch(" http://localhost:8000/employee/", {
-            method: "POST",
+        fetch(" http://localhost:8000/employee/"+empid, {
+            method: "PUT",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(empData)
         }).then((resp) => {
