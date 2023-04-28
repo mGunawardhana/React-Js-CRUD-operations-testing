@@ -34,7 +34,7 @@ const EmpCreate = () => {
     };
 
     return (
-        <div>
+
             <div className="row">
                 <div className="offset-lg-3 col-lg-6">
                     <form className="container" onSubmit={handleSubmit}>
@@ -121,7 +121,6 @@ const EmpCreate = () => {
                         </div>
                     </form>
                 </div>
-            </div>
         </div>
     );
 };

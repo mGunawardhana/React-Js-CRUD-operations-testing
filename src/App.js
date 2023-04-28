@@ -17,7 +17,7 @@ function App() {
             path="/employee/detail/:empid"
             element={<EmpDetails />}
           ></Route>
-          <Route path="/employee/edit:empid" element={<EmpEdit />}></Route>
+          <Route path="/employee/edit/:empid" element={<EmpEdit />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
