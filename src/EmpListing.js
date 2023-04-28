@@ -5,14 +5,24 @@ const EmpListing = () => {
     const [empData, empDataChange] = useState(null);
     const navigate = useNavigate();
     const LoadDetail = (id) => {
-        navigate('/employee/detail/'+id);
+        navigate('/employee/detail/' + id);
     }
 
     const LoadEdit = (id) => {
-        navigate('/employee/edit/'+id);
+        navigate('/employee/edit/' + id);
     }
 
     const RemoveFunction = (id) => {
+        if (window.confirm('Do you want to remove')) {
+            fetch(" http://localhost:8000/employee/" + id, {
+                method: "DELETE",
+            }).then((resp) => {
+                alert("Deleted Successfully!");
+                window.location.reload();
+            }).catch((error) => {
+                alert(error.getMessage);
+            })
+        }
 
     }
 

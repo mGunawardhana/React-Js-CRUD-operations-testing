@@ -1,14 +1,8 @@
 {
   "employee": [
     {
-      "id": 1,
-      "name": "maneesha",
-      "email": "manee@gmail.com",
-      "phone": "071-9043372"
-    },
-    {
       "id": 2,
-      "name": "sas",
+      "name": "aaaaaaaaaaaaa",
       "email": "sas@gmail.com",
       "phone": "071-9034572"
     },
@@ -32,12 +26,6 @@
       "phone": "071-9072263",
       "active": true,
       "id": 5
-    },
-    {
-      "name": "sas",
-      "email": "sas@gmail.com",
-      "phone": "071-1111111111",
-      "id": 6
     }
   ]
 }

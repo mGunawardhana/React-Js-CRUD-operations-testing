@@ -35,7 +35,7 @@ const EmpEdit = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const empData
-            = {name, email, phone, active};
+            = {id,name, email, phone, active};
 
         fetch(" http://localhost:8000/employee/"+empid, {
             method: "PUT",
